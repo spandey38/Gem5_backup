@@ -1,0 +1,87 @@
+%!PS-Adobe-2.0
+%%Pages: 1
+%%EndComments
+%!
+/MSAVE { /mStat save def } def
+/MRESTORE { mStat restore } def
+/SET { exch def } def
+/SF { /wi SET theFont [wi 0 0 FSIZE 0 0] makefont setfont } def
+/L { newpath moveto lineto stroke } def
+/VL { 2 index exch L } def
+/HL { 1 index L } def
+/BOX { /@yb SET /@xb SET /@yt SET /@xt SET newpath
+ @xb @yb moveto @xb @yt lineto @xt @yt lineto @xt @yb lineto closepath } def
+/SL { moveto show } def
+/SR { exch dup /@xr SET 2 index stringwidth pop sub dup
+ 0 le { pop 0 @xr 3 -1 roll SC } { exch FSIZE 2 div sub moveto show }
+ ifelse } def
+/SCP { /@s SET @s stringwidth pop /@sw SET @sw 2 div sub
+ dup @sw add maxX gt { pop maxX @sw sub } if exch moveto @s show } def
+/SC { FSIZE 2 div sub /@y SET /@x2 SET /@x1 SET /@s SET
+ /@l @x2 @x1 sub def /@x @x1 @x2 add 2 div def
+ /@w @s stringwidth pop def @l @w gt
+ { @y @x @s SCP }
+ { @l FSIZE mul @w 1 add div dup MINFSIZE lt
+ { pop } { /svf currentfont def SF @y @x @s SCP svf setfont } ifelse }ifelse
+} def
+/LE { exch GX GY FSIZE 2 div add SR /@x GX def
+ { dup stringwidth pop /@w SET /@x @x FSIZE add def @x @w add
+ 720 ge { /@x GX FSIZE add def /GY GY FSIZE 2 add sub def } if
+ @x GY SL /@x @x @w add def } repeat /GY GY FSIZE 4 add sub def } def
+/FSIZE 9 def /MINFSIZE 4 def /maxX 718 def
+612 0 translate
+90 rotate
+36 -10 translate
+1 setlinecap 0.6 setlinewidth 
+/theFont /Helvetica findfont def FSIZE SF
+%%Page: 1 1
+%%PageOrientation: Landscape
+MSAVE
+0.82 setgray
+0 571 720 586 BOX fill
+0 setgray
+0 571 720 586 BOX stroke
+(irsim_logic)6 579 FSIZE 2 div sub SL
+(\(trace move c out\)  Sun Jul 29 22:50) 715 579 SR
+0 46 720 586 BOX stroke
+0 setlinewidth [1 3] 0 setdash /svfnt currentfont def
+theFont 0.7 FSIZE mul scalefont setfont
+(time \(ns\)) 0 27 66 SC
+28 569 59 VL
+(100.00) 0 56 56 SC
+114 569 59 VL
+(125.00) 0 228 56 SC
+200 569 59 VL
+(150.00) 0 400 56 SC
+286 569 59 VL
+(175.00) 0 572 56 SC
+373 569 59 VL
+(200.00) 0 746 56 SC
+458 569 59 VL
+(225.00) 0 916 56 SC
+544 569 59 VL
+(250.00) 0 1088 56 SC
+631 569 59 VL
+(275.00) 0 1262 56 SC
+717 569 59 VL
+(300.00) 0 1434 56 SC
+26 66 718 HL
+0.6 setlinewidth [] 0 setdash svfnt setfont
+(a)26 526 SR
+(b)26 449 SR
+(c)26 372 SR
+(out)26 295 SR
+28 492 373 HL
+28 415 28 HL
+28 415 483 VL
+28 483 373 HL
+28 406 28 HL
+28 338 406 VL
+28 338 200 HL
+200 338 406 VL
+200 406 373 HL
+28 329 200 HL
+200 261 329 VL
+200 261 373 HL
+showpage MRESTORE
+%%EOF

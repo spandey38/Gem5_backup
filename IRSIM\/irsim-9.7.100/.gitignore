@@ -1,0 +1,12 @@
+irsim
+defs.mak
+Depend
+config.cache
+config.log
+make.log
+install.log
+*.o
+*.so
+*~
+UPDATE_ME
+VERSION
